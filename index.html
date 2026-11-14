@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ENGN0520 lab checkoff</title>
+<script>
+  // The ONE line to change if the Apps Script web app URL ever changes.
+  // Paste the "Web app URL" from Deploy > Manage deployments (it ends in /exec).
+  var TARGET = "https://script.google.com/a/macros/brown.edu/s/PASTE-YOUR-DEPLOYMENT-ID-HERE/exec";
+
+  // Forward to the app, keeping ?b=0137K from the sticker.
+  location.replace(TARGET + location.search);
+</script>
+</head>
+<body style="font-family: sans-serif; padding: 24px;">
+  <p>Opening the lab checkoff app&hellip;</p>
+  <p><a id="go" href="#">Tap here if nothing happens.</a></p>
+  <script>document.getElementById("go").href = TARGET + location.search;</script>
+</body>
+</html>
